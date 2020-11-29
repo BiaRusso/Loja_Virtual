@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(138, 49, 226);
+    
+    /*background-image: url(fundo.png);*/
+}
+.container{
+    margin: 0px;
+  
+}
+.row{
+    padding-left: 10%;
+  
+}
+.newarrival{
+    margin-top: 50px;
+    color: #2ad85e;
+    font-size:36px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.col-md-7 h2{
+    color: #555;
+}
+.stars{
+    height: 30px;
+}
+.price{
+    color: #fe980f;
+    font-size:26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+}
+.cart{
+    background: #8d73e9;
+    color: #f9fcff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    padding-right: 0%;
+}
+
+#check{
+  display: none;
+}
+
+#icone{
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.barra{
+  background: rgb(209, 155, 206);
+  height: 100%;
+  width:  200px;
+  position: absolute;
+  transition:  all  .2s linear;
+  left: -300px;
+  
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top:60px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+body {
+  -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  animation: -amp-start 8s steps(1, end) 0s 1 normal both
+}
+
+@-webkit-keyframes -amp-start {
+  from {
+    visibility: hidden
+  }
+
+  to {
+    visibility: visible
+  }
+}
+
+@-moz-keyframes -amp-start {
+  from {
+    visibility: hidden
+  }
+
+  to {
+    visibility: visible
+  }
+}
+
+@-ms-keyframes -amp-start {
+  from {
+    visibility: hidden
+  }
+
+  to {
+    visibility: visible
+  }
+}
+
+@-o-keyframes -amp-start {
+  from {
+    visibility: hidden
+  }
+
+  to {
+    visibility: visible
+  }
+}
+
+@keyframes -amp-start {
+  from {
+    visibility: hidden
+  }
+
+  to {
+    visibility: visible
+  }
+}
+
+.link{
+  background-color: rgb(114, 181, 245);
+  padding: 20px;
+  font-family:'Arial';
+  font-size: 12pt;
+  font-weight: bold;
+  transition: all .2s linear;
+  color: #f4f4f9;
+  border-bottom: 2px solid rgb(209, 155, 206);
+
+  margin-left: 50px;
+  margin-top:20px ;
+}
+
+.link:hover{
+  background-color: #ecf790;
+  
+}
+
+#check:checked ~ .barra{
+      transform: translateX(300px);
+}
+#check:checked ~ .barra nav a .link{
+  opacity: 1;
+  margin-top: 0;
+  transition-delay: .2s;
+}
+
+
+
+
+
+
+  
+  
